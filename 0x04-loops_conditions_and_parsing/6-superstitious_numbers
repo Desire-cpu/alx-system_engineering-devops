@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+# Displays numbers from 1 to 20 in addition to:
+# Print  "bad luck from China" for the 4th iteration
+# Print  "bad luck from Japan" for the 9th iteration
+# Print  "bad luck from Italy" for the 17th loop iteration
+
+bala=1
+
+while [ $bala -le 20 ]
+do
+  echo "$bala"
+  case $bala in
+    "4") echo "bad luck from China";;
+    "9") echo "bad luck from Japan";;
+    "17") echo "bad luck from Italy";;
+  esac
+  (( bala++ ))
+done
