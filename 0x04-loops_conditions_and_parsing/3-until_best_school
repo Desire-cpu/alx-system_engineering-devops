@@ -2,7 +2,7 @@
 # this script prints best school 10 times
 
 i=10
-until [$i == 1]; do
+until [ $i -eq 1 ]; do
 	echo "Best School"
 	((i-1))
 done
